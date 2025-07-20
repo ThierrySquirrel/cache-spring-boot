@@ -23,9 +23,9 @@ Support function:
 ```xml
 <!--Adding dependencies to pom. XML-->
         <dependency>
-            <groupId>com.github.thierrysquirrel</groupId>
+            <groupId>io.github.thierrysquirrel</groupId>
             <artifactId>cache-spring-boot-starter</artifactId>
-            <version>1.2.1.4-RELEASE</version>
+            <version>1.3.0.0-RELEASE</version>
         </dependency>
 ``` 
 
@@ -44,6 +44,7 @@ public class CacheRestController {
     @GetMapping("/cache")
     @Cache
     public String hello(@CacheParameter @RequestParam String interfaceName,@RequestParam String versionNo,@CacheParameter @RequestParam long timeStamp) {
+        System.out.println("SQL");
         return "hello";
     }
 }
