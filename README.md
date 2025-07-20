@@ -34,6 +34,7 @@ Support function:
  ```properties
  ## application.properties
 spring.redis.host="127.0.0.1"  Redis Address
+cache.expiration-time=60  Redis cache expiration time
  ```
 
 # Cache 

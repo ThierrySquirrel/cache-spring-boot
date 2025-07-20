@@ -34,6 +34,7 @@
  ```properties
  ## application.properties
 spring.redis.host="127.0.0.1"  redis地址
+cache.expiration-time=60  Redis缓存过期时间
  ```
 
 # 缓存 
