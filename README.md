@@ -25,7 +25,7 @@ Support function:
         <dependency>
             <groupId>io.github.thierrysquirrel</groupId>
             <artifactId>cache-spring-boot-starter</artifactId>
-            <version>1.3.0.0-RELEASE</version>
+            <version>1.3.0.1-RELEASE</version>
         </dependency>
 ``` 
 
@@ -33,8 +33,9 @@ Support function:
  
  ```properties
  ## application.properties
-spring.redis.host="127.0.0.1"  Redis Address
-cache.expiration-time=60  Redis cache expiration time
+spring.redis.host=127.0.0.1     Redis Address
+spring.redis.port=6379          Redis port
+cache.expiration-time=60        Redis cache expiration time
  ```
 
 # Cache 

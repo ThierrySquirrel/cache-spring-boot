@@ -25,7 +25,7 @@
         <dependency>
             <groupId>io.github.thierrysquirrel</groupId>
             <artifactId>cache-spring-boot-starter</artifactId>
-            <version>1.3.0.0-RELEASE</version>
+            <version>1.3.0.1-RELEASE</version>
         </dependency>
 ``` 
 
@@ -33,8 +33,9 @@
  
  ```properties
  ## application.properties
-spring.redis.host="127.0.0.1"  redis地址
-cache.expiration-time=60  Redis缓存过期时间
+spring.redis.host=127.0.0.1     redis地址
+spring.redis.port=6379          redis port
+cache.expiration-time=60        Redis缓存过期时间
  ```
 
 # 缓存 
